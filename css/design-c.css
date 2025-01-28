@@ -33,12 +33,18 @@ header p:hover {
     text-decoration: underline;
 }
 
-#banner-link {
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+
+#banner a {
     text-decoration: none;
 }
 
 h1 {
-    height: 8vh;
     width: 100vw;
     padding: 1rem 0;
     box-shadow: 0 0 5px 1px black;
@@ -76,7 +82,7 @@ nav p:hover {
 }
 
 .curr-page {
-    color: gray;
+    color: silver;
 }
 
 #hero-container {
