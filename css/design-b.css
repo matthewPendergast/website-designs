@@ -1,0 +1,105 @@
+html {
+    background-color: black;
+}
+
+#hero {
+    height: 100vh;
+    background-image: url(../images/hero_b.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    box-shadow: 0 0 5px black;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.header-left {
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.header-left a {
+    font: small-caps bold 1.75rem Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.header-right {
+    display: none;
+}
+
+.header-menu {
+    padding-right: 1.5rem;
+}
+
+.fa-solid, fa-bars {
+    font-size: 2rem;
+}
+
+.header-right p {
+    font: small-caps 1.25rem Verdana, sans-serif;
+}
+
+#slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+h1 {
+    font: small-caps bold 3rem Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font: small-caps bold 2rem Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    header {
+        height: 12vh;
+        padding: 0 3rem;
+        box-shadow: none;
+        background-color: transparent;
+    }
+    .header-left {
+        padding: 0;
+        background-color: transparent;
+    }
+    .header-left a:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .header-right {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        gap: 1rem;
+        padding-top: 0;
+    }
+    .header-right p:hover {
+        cursor: pointer;
+        color: white;
+    }
+    .header-menu {
+        display: none;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
