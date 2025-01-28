@@ -1,0 +1,111 @@
+html {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    height: 5vh;
+    background-color: navy;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    gap: 0.4rem;
+}
+
+header i:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    transform: scale(1.3);
+}
+
+header p {
+    font: 0.75rem Tahoma, sans-serif;
+}
+
+header p:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+    text-decoration: underline;
+}
+
+#banner-link {
+    text-decoration: none;
+}
+
+h1 {
+    height: 8vh;
+    width: 100vw;
+    padding: 1rem 0;
+    box-shadow: 0 0 5px 1px black;
+    font: small-caps bold 2rem Tahoma, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: white;
+}
+
+h1:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+#nav-container {
+    height: 5vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav p {
+    font: 1rem Tahoma, sans-serif;
+    color: white;
+}
+
+nav p:hover {
+    cursor: pointer;
+    filter: brightness(70%);
+}
+
+.curr-page {
+    color: gray;
+}
+
+#hero-container {
+    height: 70vh;
+    background-color: black;
+}
+
+#hero {
+    width: 90vw;
+    height: 100%;
+    background-image: url(../images/hero_c.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    height: 20vh;
+    background-image: linear-gradient(black 10%, darkslategray);
+}
+
+@media all and (min-width: 768px) {
+    header {
+        gap: 3rem;
+    }
+    header p {
+        font: 0.875rem Tahoma, sans-serif;
+    }
+}

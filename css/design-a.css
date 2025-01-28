@@ -30,7 +30,7 @@ header {
 }
 
 .header__left img:hover {
-    filter: brightness(80%);
+    filter: brightness(70%);
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 h1:hover {
-    filter: brightness(80%);
+    filter: brightness(70%);
     cursor: pointer;
 }
 
@@ -53,7 +53,7 @@ h1:hover {
 }
 
 .header__right p:hover {
-    filter: brightness(80%);
+    filter: brightness(70%);
     cursor: pointer;
 }
 
@@ -64,7 +64,7 @@ h1:hover {
 }
 
 .header__menu:hover {
-    filter: brightness(80%);
+    filter: brightness(70%);
     cursor: pointer;
 }
 
