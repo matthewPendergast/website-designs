@@ -7,7 +7,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-    height: 5vh;
+    height: 8vh;
     background-color: navy;
     color: white;
 }
@@ -60,12 +60,14 @@ h1:hover {
 }
 
 #nav-container {
-    height: 5vh;
+    height: 7vh;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
     padding: 0.5rem 0;
     margin-left: auto;
     margin-right: auto;
@@ -109,9 +111,13 @@ main {
 
 @media all and (min-width: 768px) {
     header {
+        height: 5vh;
         gap: 3rem;
     }
     header p {
         font: 0.875rem Tahoma, sans-serif;
+    }
+    #nav-container {
+        height: 5vh;
     }
 }
