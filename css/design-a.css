@@ -6,6 +6,7 @@ header {
     display: flex;
     justify-content: space-between;
     height: 10vh;
+    max-width: 100vw;
     background-color: black;
 }
 
@@ -17,8 +18,15 @@ header {
     padding: 0 0.3rem;
 }
 
+.header__left a {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    text-decoration: none;
+}
+
 .header__left img {
-    height: 100%;
+    height: 95%;
 }
 
 .header__left img:hover {
@@ -101,6 +109,10 @@ h1:hover {
 }
 
 .slogan__offset-2 {
+    transform: translateX(8.5%);
+}
+
+.slogan__offset-3 {
     transform: translateX(20%);
 }
 
