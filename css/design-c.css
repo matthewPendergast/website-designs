@@ -8,7 +8,7 @@ header {
     align-items: center;
     gap: 0.75rem;
     height: 8vh;
-    background-color: navy;
+    background-image: linear-gradient(black, navy);
     color: white;
 }
 
