@@ -1,0 +1,206 @@
+#bg-image {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-image: url(../images/hero_a.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    font: bold 1rem Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#header-left {
+    display: none;
+}
+
+#header-left p:hover {
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+#header-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 10vh;
+}
+
+#header-center img {
+    height: 8vh;
+}
+
+#header-center img:hover {
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+#header-center__menu {
+    display: block;
+    font-size: 2rem;
+}
+
+#header-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 8vh;
+}
+
+.header-right__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+}
+
+.header-right__content:hover {
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+.header-right__content i {
+    font-size: 1.75rem;
+}
+
+.header-right__content p {
+    display: none;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 80vh;
+    color: white;
+}
+
+#title-card {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1.25rem;
+    border: 1px solid white;
+    border-radius: 7rem 0 7rem 0;
+    box-shadow: 0 0 5px 2px black;
+    background-color: rgba(0,0,0, 0.3);
+}
+
+h2 {
+    font: italic 1.25rem Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 4px black;
+    padding-left: 2rem;
+}
+
+h1 {
+    font: bold 3rem Tahoma, sans-serif;
+    text-shadow: 1px 1px 4px black;
+}
+
+h3 {
+    font: bold 1.25rem Tahoma, sans-serif;
+    text-shadow: 1px 1px 4px black;
+    text-align: center;
+    padding-left: 3rem;
+}
+
+#title button {
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px black;
+    font: bold 1rem Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(0,0, 128, 0.75);
+}
+
+#title button:hover {
+    cursor: pointer;
+    background-color: navy;
+    transform: scale(1.05);
+}
+
+@media all and (min-width: 768px) {
+    #header-center {
+        justify-content: space-evenly;
+    }
+    #header-right {
+        justify-content: space-around;
+    }
+    .header-right__content p {
+        gap: 0.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 2rem;
+        padding-left: 7rem;
+    }
+}
+@media all and (min-width: 992px) {
+    header {
+        flex-direction: row;
+        height: 13vh;
+    }
+    #header-left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-basis: 40vw;
+    }
+    #header-center {
+        justify-content: center;
+        flex-basis: 20vw;
+    }
+    #header-center img {
+        height: 7vh;
+    }
+    #header-center__menu {
+        display: none;
+    }
+    #header-right {
+        justify-content: center;
+        flex-basis: 40vw;
+        gap: 3rem;
+    }
+    .header-right__content p {
+        display: block;
+    }
+    #title-card {
+        padding: 2.5rem 3.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 7rem;
+    }
+    h3 {
+        font-size: 2rem;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 5rem;
+    }
+}
