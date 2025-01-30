@@ -11,7 +11,7 @@
 }
 
 main {
-    position: fixed;
+    position: relative;
     width: 100%;
     margin: auto;
 }
@@ -20,6 +20,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: fixed;
+    width: 100%;
     border-bottom: 1px solid white;
     font: bold 1rem Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
@@ -91,7 +93,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    height: 80vh;
+    height: 100vh;
     color: white;
 }
 
@@ -135,6 +137,53 @@ h3 {
 #title button:hover {
     cursor: pointer;
     background-color: navy;
+    transform: scale(1.05);
+}
+
+section {
+    display: flex;
+    padding-bottom: 3rem;
+    border-top: 1px solid white;
+    box-shadow: 0 0 5px 2px black;
+    background-color: rgba(0,0,0, 0.6);
+}
+
+.section-left,
+.section-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 2rem;
+}
+
+section h4 {
+    margin-top: 3rem;
+    font: bold 2rem Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline silver solid 1px;
+    text-underline-offset: 5px;
+    color: white;
+}
+
+section p {
+    width: 70%;
+    font: 1rem Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: white;
+}
+
+section button {
+    padding: 0.75rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px black;
+    font: bold 0.75rem Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+section button:hover {
+    cursor: pointer;
+    background-color: rgba(0,0,0, 1);
     transform: scale(1.05);
 }
 
