@@ -1,11 +1,17 @@
 #bg-image {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
     background-image: url(../images/hero_a.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     filter: blur(5px);
     -webkit-filter: blur(5px);
 }
